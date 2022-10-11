@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체 태그, body, head, html 까지도 적용된다 */
+        /* * {
+            color: aquamarine;
+            font-style: 20px;
+        } */
+        
+        /*  태그(타입) 선택자 */
+        /* h1 {
+            color: red;
+        } */
+
+        /* 클래스 선택자: 공통적으로 스타일을 적용할 때*/
+        /* .title {
+            font-size: 6px;
+            color: tomato;
+        }
+        .title2 {
+            font-size: 8px;
+            color: violet;
+        }
+        .on {
+            font-style: italic;
+        } */
+        /* id 선택자: 각각 스타일을 적용할 때 */
+        /* #board {
+            color: darkcyan;
+        }
+
+        #contents {
+            color: red;
+        }
+
+        #user_id {
+            background-color: chartreuse;
+            border-color: tomato;
+        } */
+        /* 그룹 선택자 */
+        #board, #contents {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- class명은 의미가 있는 이름으로 (같은 이름으로 해줘야 함)-->
+    <!-- class이름은 여러개를 만들 수 있다 -->
+    <!-- id명은 의미가 있는 이름으로 각각 다르게 해줘야 함 -->
+    <h1 class="title2 on" id="board">자유게시판</h1>
+    <p class="title2" id="contents">안녕하세요. 내용입니다.</p>
+    <p class="title on">안녕하세요. 내용입니다.</p>
+    <span class="title">태그입니다</span>
+    <form>
+        <input type="text" name="user_id" id="user_id">
+    </form>
+</body>
+</html>

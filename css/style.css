@@ -1,0 +1,8 @@
+   /* ctrl + / */
+        /* 주석입니다. */
+        /* 여러 줄 주석처리 가능 */
+        /* 내부 스타일 작성법 */
+h1 { color: deepskyblue;
+    font-style: italic; }
+p {color: brown;
+  font-size: 20px; }

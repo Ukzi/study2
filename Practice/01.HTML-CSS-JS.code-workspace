@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../01.HTML-CSS-JS"
+		},
+		{
+			"name": "study2",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "01.HTML-CSS-JS"
+	}
+}
