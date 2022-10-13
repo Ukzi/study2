@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 30px;
+      }
+      #content {
+        font-size: 10px;
+      }
+      #content p {
+        /* em: 부모가 기준 */
+        font-size: 2em;
+      }
+      p:nth-of-type(1) { font-size: 1rem;}
+      p:nth-of-type(2) { font-size: 2rem;}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>1. lorem</p>
+    </div>
+    <p>2. lorem</p>
+    <p>3. lorem</p>
+</body>
+</html>
