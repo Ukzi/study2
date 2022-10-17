@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 초기화 태그 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a { text-decoration: none !important;}
+        img { border: 0;}
+        ul { list-style: none;}
+        header, footer, section { box-sizing: border-box;}
+
+        .wrap {
+            background: #fff;
+        }
+
+        /*  0 ~ 766px */
+
+        .header__nav {
+            max-width: 1200px;
+            background: rgb(205, 239, 248);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 2px solid rgb(15, 77, 190);
+            font-size: 0.75rem;
+        }
+
+        .header__nav > h1 {
+            width: 100px;
+            height: 120px;
+        }
+
+        .header__nav > nav {
+            width: calc(100%-100px);
+            background: #ffffff;
+            height: 120px;
+        }
+
+        .header__menu1 > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .header__menu2 > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .search {
+            width: 168px;
+            float: right;
+        }
+
+        .all_menu{
+            width:168px;
+            float: right;
+        }
+
+        .login {
+            width: 100px;
+            height: 20px;
+            padding: 2px;
+            display: flex;
+        }
+
+        .btn__bank {
+            background: orange;
+            width: 90px;
+            height: 23px;
+        }
+
+        .btn_senter {
+            width: 80px;
+            background: rgb(15, 77, 190);
+        }
+
+        .slider {
+            height: 480px;
+            background: rgb(105, 161, 224);
+        }
+
+        .main {
+            font-size: 1.2rem;
+            background: rgb(42, 42, 206);
+        }
+
+        .guide {
+            font-size: 1.1rem;
+            background: rgb(180, 176, 176);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav">
+            <h1>IBK기업은행</h1>
+            <nav>
+                
+                <div class="header__menu1">
+                    <ul>
+                        <li>금융사기예방센터</li>
+                        <li>고객센터</li>
+                        <li>마이페이지</li>
+                        <li>정보공개</li>
+                        <li>은행소개</li>
+                        <li>IR</li>
+                        <li>영업점안내</li>
+                        <li>Global</li>
+                    </ul>
+                </div>
+                
+                <div class="search">
+                    <input type="text">
+                </div>
+
+                <div class="header__menu2">
+                    <ul>
+                        <li>개인뱅킹</li>
+                        <li>기업뱅킹</li>
+                        <li>금융상품</li>
+                        <li>금융서비스</li>
+                        <li>금융정보</li>
+                        <li>카드</li>
+                    </ul>
+
+                    <div class="all_menu">
+                        <select name="" id="">
+                            <option value="">전체메뉴</option>
+                            <option value="">뭐시기</option>
+                            <option value="">저시기</option>
+                            <option value="">이런</option>
+                            <option value="">저런</option>
+                        </select>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <div class="login">
+            <div class="login__bank">
+                <select class="btn__bank">
+                    <option value="">뱅킹로그인</option>
+                    <option value="">개인뱅킹</option>
+                    <option value="">기업뱅킹</option>
+                </select>
+            </div>
+            <div class="login__senter">
+                <button class="btn_senter">인증센터</button>
+            </div>
+        </div>
+        
+        <section class="slider">
+            <div class="slider__content"></div>
+        </section>
+
+        <section class="main">
+            <div class="main__slider menu">
+                <ul>
+                    <li>계좌조회</li>
+                    <li>카드조회</li>
+                    <li>카드등록</li>
+                    <li>환율조회</li>
+                    <li>소비자포털/민원</li>
+                    <li>상품공시실/약관</li>
+                    <li>서민금융</li>
+                    <li>IBK 부동산 매물광장</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="guide">
+            <div class="guide__content">
+                <div class="content__ibk"></div>
+                <div class="content__noti"></div>
+                <div class="content__event"></div>
+            </div>
+        </section>
+
+        <section class="middle">
+            <div class="middle__content">
+                <div class="content__cube"></div>
+                <div class="content__talk"></div>
+                <div class="content__news"></div>
+                <div class="content__anno"></div>
+                <div class="content__menu">
+                    <ul>
+                        <li>지급보증서발급조회</li>
+                        <li>잔액증명서발급조회</li>
+                        <li>이용시간</li>
+                        <li>수수료안내</li>
+                        <li>전자민원접수</li>
+                        <li>이메일상담</li>
+                        <li>IBK퇴직연금</li>
+                        <li>IBK BOX POS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrap">
+
+    </footer>
+
+
+    
+</body>
+</html>
