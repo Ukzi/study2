@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = prompt("원의 넓이와 둘레를 구할 반지름을 입력하세요.", 0)
+       
+        const r = Number(str)
+        
+        // const m2 = 3.14 * cm *cm
+        // console.log(m2);
+        // const ccm = 2 * 3.14 * cm
+        // console.log(ccm);
+        // console.log("결과: 넓이는" + m2 + "m2" + ", 둘레는" + ccm + "cm 입니다.")
+
+        let output = ''
+         output += `원의 반지름: ${r}\n`
+         output += `원의 넓이: ${3.14 * r * r}\n`
+         output += `원의 둘레: ${2 * 3.14 * r}`
+        alert(output)
+    </script>
+</body>
+</html>

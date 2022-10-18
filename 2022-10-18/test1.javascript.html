@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rawInput = prompt("달러 원화로 환율 계산", 0)
+        console.log(rawInput);
+
+        const usd = Number(rawInput)
+        const krw = usd * 1270
+        console.log(krw);
+
+        let output = ''
+        output += `달러: ${usd}\n`
+        output += `→ 원화: ${usd * 1270}`
+        alert(output)
+
+        // let output = ''
+        //  output += `${usd} 달러는 ${krw} 원 입니다`
+        // alert(output)
+
+    </script>
+</body>
+</html>

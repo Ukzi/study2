@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grade = Number(prompt('몇 학년 인가요?',''))
+        var score = Number(prompt('점수를 적어주세요.',''))
+
+
+        if ( 0 <= score && score >= 100) {
+
+            if (grade === 4 && score >= 70) {
+                alert = '합격'
+            } else if ((grade < 4 || 4 < grade) && score >= 60 ) {
+                alert = '합격'
+            } else {
+                alert = '불합격'
+            }
+        }else {
+                alert('다시입력하세요.');
+            }
+        
+    </script>
+</body>
+</html>
