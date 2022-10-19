@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt("정수입력", "")
+        var num2 = prompt("정수입력", "")
+        var num3 = prompt("정수입력", "")
+
+        var sum = Number(num1) + Number(num2) + Number(num3) //합계
+        var avg = sum / 3; //평균
+
+        max = num1
+        min = num1
+        
+        if(max < num2) max = num2; //최대
+        if(max < num3) max = num3;
+
+        if(min > num2) max = num2; //최소
+        if(min > num3) max = num3;
+
+        var msg = "최대값: " + max + ", 최소값: " + min +", 합계: " + sum + ", 평균: " + avg;
+
+        document.write(msg);
+    </script>
+</body>
+</html>

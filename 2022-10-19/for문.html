@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //반복:  앞에는 초기값 중간에 조건식 
+        // for (let i = 0; i < 5; i++) {
+        //     console.log(i)
+        // }
+
+        // for (let i = 10; i > 5; i--) {
+        //     console.log(i)
+        // }
+
+        // for (let i = 0; i < 10; i+=2) {
+        //     console.log(i)
+        // }
+
+        let sum = 0;  //for문 바깥쪽에 있어야 함
+        for (let i = 0; i <= 100; i++) {
+            sum += i  //sum = sum + i // 0 부터 100가지의 합계를 구하는 공식
+            console.log(`sum: ${sum}`)
+        }
+
+        console.log(`최종 sum: ${sum}`)
+    </script>
+</body>
+</html>
