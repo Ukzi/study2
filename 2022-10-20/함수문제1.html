@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const input = prompt("년도를 입력하세요","")
+        const year = Number(input)
+
+        function leapYear(year) {
+            return (year %4 === 0) && (year % 100 !== 0) || (year % 400 === 0)
+        }
+        if (leapYear(year)) {
+            alert("윤년 입니다")
+        } else {
+            alert("평년 입니다")
+        }
+        alert(`${year}년은 ${leapYear(year)}`)
+  
+ 
+     </script>
+</body>
+</html>

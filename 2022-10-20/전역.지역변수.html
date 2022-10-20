@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수</title>
+    <body>
+        <script>
+            var num = 1; //전역변수
+            //함수선언
+            function love(){
+              var b = 10; //지역변수  는 함수 안에서만 사용가능
+              var a = num+1; //지역변수
+              console.log('a:',a);
+            }
+            love();
+            console.log(num);
+            console.log(b); // 실행안됨
+        </script>
+</body>
+</html>

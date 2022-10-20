@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const num1 = prompt('숫자입력','')
+        // const num2 = prompt('숫자입력','')
+        
+        // const a = Number(num1)
+        // const b = Number(num2)
+
+        function sumAll(a, b) {
+            let output = 0;
+            for (let i = a; i <= b; i++ ) {
+                console.log(i);
+                output += i;        //누적합산
+            }
+            return output;
+        }
+
+        console.log(`합: ${sumAll(1, 10)}`)
+        
+    </script>
+</body>
+</html>
