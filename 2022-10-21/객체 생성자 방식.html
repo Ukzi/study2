@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 2. 객체 생성자 방식
+        // 객체 = 속성 + 메소드(함수)
+
+        // 객체 정의
+        function Pet (){
+            // 속성
+            this.name = '구름'  // this: 현재 있는 객체를 가르킨다
+            //메소드
+            this.eat = function(food) {
+                console.log(`구름이가 ${food}를 먹습니다.`)
+            }
+        }
+
+        // 객체 생성
+        // 객체를 쓰는 이유? 코드의 생산성이 높아진다.
+        const pet = new Pet (); // 객체 안에 있는 걸 가져다 쓸 수 있다.
+        // const pet2 = new Pet ();
+        console.log(pet.name)
+        pet.eat('밥')
+    </script>
+</body>
+</html>
