@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <textarea></textarea>
+    <script>
+        const textarea = document.querySelector('textarea')
+        const h1 = document.querySelector('h1')
+
+
+        //keyup : 키보드에서 손을 땔때
+        //keypress : 키가 입력되었을때 (아시아권 문자 잘 안됨)
+        //keydown : 키보드가 눌릴 때 (아시아권 문자 잘 안됨)
+        textarea.addEventListener('keyup', function(){
+            const length = textarea.value.length //value는 입력받는 곳에 사용된다
+            // console.log(length);
+            h1.textContent = `글자 수: ${length}`
+        })
+    </script>
+</body>
+</html>
