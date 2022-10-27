@@ -48,7 +48,8 @@ table {
 }
 
 /* haseo: 추가 */
-a { text-decoration: none !important; 
+a { 
+    text-decoration: none !important; 
 	color: black;
 }
 

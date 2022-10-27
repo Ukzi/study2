@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul class="wrap">
+            <li class="list_1">
+                <span class="child1">1번</span>
+                <span>2번</span>
+                <span class="child3">3번</span>
+                <span>4번</span>
+                <span class="child5">5번</span>
+            </li>
+            <li class="list_2">리스트2</li>
+            <li class="list_3">리스트3</li>
+        </ul>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            // $('.wrap li:first').css('border','1px solid red')
+            // $('.wrap li:last').css('border','1px solid blue')
+            // $('.wrap li:odd').css('border','1px solid blue') // 홀수 번째 선택 0번(li태그),1번,2번
+            // $('.wrap li:even').css('border','1px solid blue') // 짝수번째
+            // $('.list_1 span').eq(2).css('border','1px solid blue') //eq(): n번 인덱스
+            // $('.list_1 span:lt(2)').css('border','1px solid blue') // n번 인덱스보다 작은애들 n-1, n-2 ...
+            // $('.list_1 span:gt(2)').css('border','1px solid blue') // n번 인덱스보다 큰 애들 n+1, n+2 ...
+            // $('.list_1 span:first-of-type').css('border','1px solid blue') // 첫번째만
+            // $('.list_1 span:last-of-type').css('border','1px solid blue') // 마지막만
+            // $('.list_1 span:nth-child(3)').css('border','1px solid blue') // 단순하게 span태그중 n번째
+            // $('.list_1 span:nth-child(2n-1)').css('border','1px solid blue')
+            $('.list_1 span:').slice(1,3).css('border','1px solid blue')
+        })
+    </script>
+</body>
+</html>

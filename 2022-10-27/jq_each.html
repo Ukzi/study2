@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul class="list">
+                <li class="list_1">리스트1</li>
+                <li class="list_2">리스트2</li>
+                <li class="list_3">리스트3</li>
+        </ul>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            var obj = [
+                {
+                    area: "서울",
+                    name: "라이언"
+                },{
+                    area: "인천",
+                    name: "어피치"
+                },{
+                    area: "부산",
+                    name: "죠르디"
+                }
+            ]
+
+            var idxNum = $('li').index($('.list_2'))
+            console.log(idxNum)
+
+            // var names = ["김부장", "정부장", "이부장"]
+
+            // var idxNum = $.inArray("정부장", names)
+            // console.log(idxNum) //배열의 몇번째인지 정부장은 0,1,2 1번째
+            // console.log($.isArray(names)) //배열인지 아닌지 판단
+
+
+            // var arr2 = $.grep(obj, function(val, idx){
+            //     if (val.area === "서울") {
+            //         return true
+            //     } else {
+            //         return false
+            //     }
+            // })
+            
+            // var arr1 = $.map(obj, function(val, idx){
+            //     if (val.area === "서울") {
+            //         return val
+            //     }
+            // })
+
+            // console.log(arr1)
+
+            // console.log(arr2)
+
+
+
+            // $(obj).each(function(idx, val){
+            //     console.log(idx, val)
+            // })
+
+            // $('.list li').each(function(idx, val){
+            //     console.log(idx, val)
+            // })
+         })
+    </script>
+</body>
+</html>
